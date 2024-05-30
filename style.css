@@ -11,11 +11,7 @@ body{
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom right, rgb(0, 72, 255), rgb(0, 255, 251));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    background-image: linear-gradient(to bottom right, rgb(0, 72, 255), rgb(0, 255, 251));    
 }
 
 .main-div{
@@ -47,7 +43,7 @@ input[type="text" i] {
     border: none;
 }
 
-button{
+.input-div > button{
     border: none;
     background-color:rgb(76, 76, 255);
     color: white;
@@ -59,12 +55,12 @@ button{
     border-end-end-radius:  14px;
 }
 
-button:hover{
+.input-div > button:hover{
     cursor: pointer;
     background-color: blue;
 }
 
-button:active{
+.input-div > button:active{
     background-color: rgb(29, 115, 255);
 }
 
@@ -73,7 +69,7 @@ button:active{
     margin-top: 3vw;
     min-width: 70vw;
     display: flex;
-    padding: 2vw;
+    /* padding: 2vw; */
     max-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -86,7 +82,7 @@ button:active{
     padding-left: 50px;
     padding-top: 14px;
     margin: 10px;
-    display: block;
+    display: flex;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -94,6 +90,7 @@ button:active{
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .task-div input{
@@ -103,6 +100,12 @@ button:active{
     cursor: pointer;
     height: 0px;
     width: 0px;
+}
+
+.buttons-div > button{
+    padding-right: 10px;
+    border: none;
+    background-color:  rgb(0, 191, 255);
 }
 
 .checkmark{
