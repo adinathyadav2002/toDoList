@@ -1,0 +1,45 @@
+<!-- templete for sample webpage -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags: to tell user and browser more about the document  -->
+  <meta charset="UTF-8" />
+  <!-- unicode tranformation format(UTF) most used char encoding format -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Adinath satish yadav" />
+  <meta name="discription" content="To do list using html, css, js" />
+
+  <!-- TITLE  -->
+  <title>To Do List &#x1F5F8;</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest " />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GOOGLE FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <h1 class="heading">To Do List</h1>
+  <div class="main-div">
+    <div class="input-div">
+      <input type="text" placeholder="Add new task...." id="input" />
+      <button type="button" onclick="addTask()">
+        <img src="img/plus-svgrepo-com.svg" alt="add" class="icon">
+      </button>
+    </div>
+    <div class="list-div"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
