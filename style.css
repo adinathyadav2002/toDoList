@@ -53,7 +53,7 @@ html {
 input[type="text" i] {
   border-top-left-radius: 7px;
   border-end-start-radius: 7px;
-  height: 40px;
+  height: 4rem;
   width: 50vw;
   padding: 0;
   padding-left: 10px;
@@ -65,10 +65,10 @@ input[type="text" i] {
   border: none;
   background-color: rgb(76, 76, 255);
   color: white;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   font-size: 2rem;
-  height: 40px;
+  height: 4rem;
   border-top-right-radius: 7px;
   border-end-end-radius: 7px;
 }
@@ -95,20 +95,20 @@ input[type="text" i] {
 }
 
 .task-div {
-  background-color: #fff;
-  min-height: 5rem;
-  padding-left: 6rem;
-  padding-top: 14px;
+  padding: 2rem 0 2rem 6rem;
   margin: 10px;
   display: flex;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 10px;
+  border-radius: 7px;
   position: relative;
   cursor: pointer;
   justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
 .task-div input {
@@ -126,10 +126,16 @@ input[type="text" i] {
   background-color: transparent;
 }
 
+.buttons-div{
+  display: flex;
+  align-items: center;
+}
+
 .checkmark {
   position: absolute;
-  top: 25%;
-  left: 2%;
+  top: 50%;
+  left: 4%;
+  transform: translate(-50%, -50%);
   height: 25px;
   width: 25px;
   border-radius: 7px;
@@ -180,4 +186,56 @@ input[type="text" i] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/***************************************/
+/* MEDIA QUERIES */
+/***************************************/
+
+@media (max-width: 48em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 41em) {
+  html {
+    font-size: 55%;
+  }
+
+  .main-div {
+    border-radius: 7px;
+    padding: 1rem;
+    height: 80vh;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .task-div{
+    height: 8rem;
+    padding: 2rem 0 2rem 4rem;
+  }
+
+}
+
+@media(max-width:30em){
+
+  html{
+    font-size: 50%;
+  }
+
+  .task-div{
+    height: 12rem;
+    padding: 1rem 0 1rem 5rem;
+  }
+
+  .buttons-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .checkmark{
+    left: 6%;
+  }
 }
